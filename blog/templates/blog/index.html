@@ -1,0 +1,575 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Abrar Shahriar</title>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="author" content="">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+
+	<link rel="stylesheet" type="text/css" href="{% static 'blog/assets/icomoon/icomoon.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'blog/assets/vendor/bootstrap-5.1.3/css/bootstrap.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'blog/assets/vendor/chocolat/css/chocolat.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'blog/css/vendor.css' %}">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com/">
+	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;family=Work%20Sans:wght@300;400;700;900&amp;display=swap" rel="stylesheet">
+	<link rel="icon" href="{% static 'blog/images/abrarshahriar1.png' %}" type="image/png">
+	<link rel="stylesheet" type="text/css" href="{% static 'blog/css/style.css' %}">
+
+	<!-- script
+	================================================== -->
+	<script src="{% static 'blog/js/modernizr.js' %}"></script>
+
+</head>
+
+<body>
+
+	<div id="overlayer">
+		<span class="loader">
+			<span class="loader-inner"></span>
+		</span>
+	</div>
+
+	<div class="nav nav-overlay">
+		<div class="nav__content">
+			<ul class="nav__list">
+				<li class="nav__list-item active-nav"><a href="{% url 'home' %}">Home</a></li>
+				<li class="nav__list-item"><a href="{% url 'projects' %}">Portfolio</a></li>
+				<li class="nav__list-item"><a href="{% url 'resume' %}">Resume</a></li>
+                <li class="nav__list-item"><a href="{% url 'certificates' %}">Certificates</a></li>
+				<li class="nav__list-item"><a href="{% url 'blog' %}">Blog</a></li>
+				<li class="nav__list-item"><a href="{% url 'contact' %}">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<header id="header">
+		<div class="header-wrap" data-aos="fade">
+			<div class="main-logo">
+				<div class="profile-wrapper">
+					<div class="profile-pic">
+						<img src="{% static 'blog/images/profile_pic.jpg' %}" alt="Profile Picture">
+					</div>
+					<a href="{% url 'home' %}"><div class="profile-name">ABRAR SHAHRIAR</div></a>
+				</div>
+			</div><!--main-logo-->
+	
+			<nav id="navbar">
+				<input id="menu-toggle" type="checkbox" />
+				<label class="menu-btn" for="menu-toggle">
+					<span></span>
+				</label>
+			</nav>
+	
+		</div><!--header-wrap-->
+	</header>
+
+	<div id="billboard" class="jarallax">
+		<img src="{% static 'blog/images/bg2.jpg' %}" alt="Banner" class="jarallax-img">
+		<div class="container">
+
+			<div class="banner-content">
+				<div class="banner-header">
+					<h2 class="display-1">Full Stack Web Developer<br/></h2>
+					<p>Develop websites, make designs mainly backend, UI, logos, visual identities, social media and magazines.</p>
+
+					<a href="{% url 'contact' %}" class="btn btn-dark btn-large">Get in touch</a>
+				</div>
+			</div>
+
+		</div>
+
+	</div><!--billboard-->
+
+	<section id="section1" class=" padding-large">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+				
+					<div class="info-box" data-aos="fade-zoom-in" data-aos-delay="600">
+						<div class="icon"><iconify-icon icon="teenyicons:code-solid"></div>
+						<h3>Backend Code</h3>
+						<p>Crafting efficient, scalable backend solutions with precision, optimizing performance, 
+						and ensuring seamless functionality in every line of code.</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="info-box" data-aos="fade-zoom-in" data-aos-delay="0">
+						<div class="icon"><iconify-icon icon="la:edit"></div>
+						<h3>UI/UX design</h3>
+						<p>Elevating user experiences through captivating UI/UX designs, 
+						blending creativity with functionality for impactful front-end development.</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="info-box" data-aos="fade-zoom-in" data-aos-delay="300">
+						<div class="icon"><iconify-icon icon="la:gitter"></div>
+						<h3>Branding</h3>
+						<p>Driving brand prominence with strategic Google reviews, precision advertising, 
+						and impactful branding for unparalleled market presence.</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="info-box" data-aos="fade-zoom-in" data-aos-delay="600">
+						<div class="icon"><iconify-icon icon="carbon:logo-x"></div>
+						<h3>Logo Design</h3>
+						<p>Transforming visions into iconic brand identities through innovative and modern logo design.</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="info-box" data-aos="fade-zoom-in" data-aos-delay="600">
+						<div class="icon"><iconify-icon icon="la:cog"></div>
+						<h3>Product Strategy</h3>
+						<p>Strategizing product success through insightful planning, innovation, 
+						and market foresight for impactful results.</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="info-box" data-aos="fade-zoom-in" data-aos-delay="600">
+						<div class="icon"><iconify-icon icon="ep:user"></div>
+						<h3>User Testing</h3>
+						<p>Precise User Testing, refining designs for seamless and user-centric interactions.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="portfolio" class="overflow-hidden pb-5 mb-5">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-8">
+					<div class="section-header d-flex align-items-center mb-5">
+						<h2 class="display-5 m-0">Recent Projects</h2>
+						<a href="{% url 'projects' %}" class="btn-link ml-3 text-dark text-decoration-none">View all Projects</a>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="swiper-buttons">
+						<div class="swiper-button portfolio-carousel-prev">←</div>
+						<div class="swiper-button portfolio-carousel-next">→</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+
+					<div class="portfolio-carousel swiper">
+						<div class="swiper-wrapper">
+							{% for project in projects %}
+							<div class="swiper-slide">
+								<figure class="portfolio-item">
+									<a href="{% url 'project-detail' project.slug %}"><img src="{{ project.image1.url }}"
+											class="portfolio-image"></a>
+									<figcaption class="portfolio-title my-3">
+										<span class="text-gray text-uppercase fs-6">{{ project.type }}</span>
+										<h3 class="fs-4 fw-bold">{{ project.title }}</h3>
+									</figcaption>
+								</figure>
+							</div>
+							{% endfor %}
+
+						</div>
+					</div>
+
+
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="bg-grey padding-large">
+		<div class="container">
+			<div class="row">
+				<div class="section-header align-center mb-5">
+					<h2 class="display-5 m-0">My clients</h2>
+					<span>I have had the privilege of working with great clients, for which I am very grateful.</span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 overflow-hidden">
+					<div id="clients-carousel" class="swiper clients-carousel">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><img src="{% static 'blog/images/dento2.png' %}" alt="brand logo" class="img-fluid">
+							</div>
+							<div class="swiper-slide"><img src="{% static 'blog/images/abrarclass.png' %}" alt="brand logo" class="img-fluid">
+							</div>
+							<div class="swiper-slide"><img src="{% static 'blog/images/myshop.png' %}" alt="brand logo" class="img-fluid">
+							</div>
+							<div class="swiper-slide"><img src="{% static 'blog/images/techtuesdays.png' %}" alt="brand logo" class="img-fluid">
+							</div>
+							<div class="swiper-slide"><img src="{% static 'blog/images/music&co..png' %}" alt="brand logo" class="img-fluid">
+							</div>
+							<div class="swiper-slide"><img src="{% static 'blog/images/liverpool.png' %}" alt="brand logo" class="img-fluid">
+							</div>
+							<div class="swiper-slide"><img src="{% static 'blog/images/natore.png' %}" alt="brand logo" class="img-fluid">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="achievement" class="padding-large">
+		<div class="container">
+			<div class="row">
+				<div class="section-header align-center mb-5">
+					<h2 class="display-5 m-0">Achievement</h2>
+					<span>Awards and Recognition</span>
+					<br>
+					<span>View my <a href="{% url 'certificates' %}">Certificates</a></span>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="card mb-4" data-aos="fade-zoom-in" data-aos-delay="0">
+						<div class="card-body">
+							<span class="card-subtitle mb-2 text-muted">2021</span>
+							<h4 class="card-title">AHZ Best Website Design Awards</h4>
+							<p class="card-text">Breakthrough Designer of the year 2021</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card mb-4" data-aos="fade-zoom-in" data-aos-delay="300">
+						<div class="card-body">
+							<span class="card-subtitle mb-2 text-muted">2022</span>
+							<h4 class="card-title">The Daily Star Website Awards</h4>
+							<p class="card-text">Best Website of the year 2022</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card mb-4" data-aos="fade-zoom-in" data-aos-delay="600">
+						<div class="card-body">
+							<span class="card-subtitle mb-2 text-muted">2022</span>
+							<h4 class="card-title">NASA International Space Apps</h4>
+							<p class="card-text">NASA Galactic Problem Solver Award 2022</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card mb-4" data-aos="fade-zoom-in" data-aos-delay="900">
+						<div class="card-body">
+							<span class="card-subtitle mb-2 text-muted">2022</span>
+							<h4 class="card-title">Harvard CS50's Web Programming with Python and JavaScript</h4>
+							<p class="card-text">Harvard CS50</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card mb-4" data-aos="fade-zoom-in" data-aos-delay="1200">
+						<div class="card-body">
+							<span class="card-subtitle mb-2 text-muted">2022</span>
+							<h4 class="card-title">Google IT Automation with Python Professional Certificate</h4>
+							<p class="card-text">Google</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card mb-4" data-aos="fade-zoom-in" data-aos-delay="1500">
+						<div class="card-body">
+							<span class="card-subtitle mb-2 text-muted">2022</span>
+							<h4 class="card-title">Google Data Analytics Professional Certificate</h4>
+							<p class="card-text">Google</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card mb-4" data-aos="fade-zoom-in" data-aos-delay="1500">
+						<div class="card-body">
+							<span class="card-subtitle mb-2 text-muted">2022</span>
+							<h4 class="card-title">Machine Learning Specialization Certificate from Stanford University and Deep Learning AI</h4>
+							<p class="card-text">Stanford University</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card mb-4" data-aos="fade-zoom-in" data-aos-delay="1500">
+						<div class="card-body">
+							<span class="card-subtitle mb-2 text-muted">2022</span>
+							<h4 class="card-title">Introduction to Cyber Security Specialization Certificate from New York University (NYU)</h4>
+							<p class="card-text">New York University (NYU)</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card mb-4" data-aos="fade-zoom-in" data-aos-delay="1500">
+						<div class="card-body">
+							<span class="card-subtitle mb-2 text-muted">2022</span>
+							<h4 class="card-title">Responsive Web Design Developer Certification from FreeCodeCamp</h4>
+							<p class="card-text">FreeCodeCamp</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="pb-2 mb-2 pb-md-5 mb-md-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2">
+					<div class="milestone">
+						<h3>8</h3>
+						<p>Years of experience</p>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="milestone">
+						<h3>32</h3>
+						<p>satisfied clients</p>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="milestone">
+						<h3>55</h3>
+						<p>projects completed</p>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="milestone">
+						<h3>90</h3>
+						<p>awards and certificates</p>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="milestone">
+						<h3>100,000</h3>
+						<p>hours of coding</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="testimonials" class="padding-large bg-grey">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-header align-center mb-5">
+						<h2 class="display-5 m-0 dark">Testimonials</h2>
+						<span>What Clients Say</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12 position-relative">
+					<div class="testimonial-carousel swiper overflow-hidden">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="card testimonials-inner">
+									<div class="card-body">
+										<p class="card-text mb-2">In the world of web development, 
+											Abrar stands out for his commitment to perfection. 
+											His attention to detail is remarkable, ensuring that each project is not just completed 
+											but delivered with finesse. A pleasure to work with.
+										</p>
+										<div class="testimonial-author">
+											<div class="author-detail">
+												<h3 class="name m-0">Ayaan Rashid</h3>
+												<span class="author-title text-muted">Ceo - Dento</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="card testimonials-inner">
+									<div class="card-body">
+										<p class="card-text mb-2">Working with Abrar has been a breeze. His responsiveness is incredible—always just an email away. He's not just a developer; he's a partner who understands our needs and delivers results beyond our expectations.</p>
+										<div class="testimonial-author">
+											<div class="author-detail">
+												<h3 class="name m-0">Anik</h3>
+												<div class="author-title text-muted">General Manager - Dento</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="card testimonials-inner">
+									<div class="card-body">
+										<p class="card-text mb-2">“Abrar's websites are more than just code; they're experiences. His creativity and innovative approach to problem-solving elevate the user journey. Working with him has been a testament to his unwavering commitment to quality.”</p>
+										<div class="testimonial-author">
+											<div class="author-detail">
+												<h3 class="name m-0">Kabir</h3>
+												<div class="author-title text-muted">Head of IT - MyShop</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="card testimonials-inner">
+									<div class="card-body">
+										<p class="card-text mb-2">What makes Abrar exceptional is not just his technical prowess but his ability to simplify complexities. His websites are not just functional; they're user-friendly and beautiful. A developer who effortlessly combines skill with a friendly and cooperative demeanor.
+										</p>
+										<div class="testimonial-author">
+											<div class="author-detail">
+												<h3 class="name m-0">Mir Javed</h3>
+												<span class="author-title text-muted">Ceo - MyShop</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="card testimonials-inner">
+									<div class="card-body">
+										<p class="card-text mb-2">Abrar's flexibility and adaptability set him apart. He effortlessly translates our ideas into functional and visually stunning websites. A true professional who takes pride in delivering excellence on time.</p>
+										<div class="testimonial-author">
+											<div class="author-detail">
+												<h3 class="name m-0">Jennifer</h3>
+												<div class="author-title text-muted">Project Manager - AbrarClass</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="card testimonials-inner">
+									<div class="card-body">
+										<p class="card-text mb-2">Abrar is not just a web developer; he's a problem solver. His dedication and hard work shine through in every project. The quality of his websites is exceptional, and his commitment to meeting deadlines is unmatched.</p>
+										<div class="testimonial-author">
+											<div class="author-detail">
+												<h3 class="name m-0">Aamir</h3>
+												<div class="author-title text-muted">Project Member - TechTuesdays</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="section2" class="padding-large" data-section="section2">
+		<div class="container">
+			<div class="row">
+				<div class="section-header align-center mb-5">
+					<h2 class="display-5 m-0">Latest Posts</h2>
+					<a href="{% url 'blog' %}"><span>My Blog</span></a>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				{% for post in posts %}
+				<div class="col-md-4">
+					<figure class="post-item">
+						<a href="{% url 'post-detail' post.slug %}" class="post-link"><img src="{{ post.image.url }}" alt="post"></a>
+						<figcaption class="py-4">
+							<div class="meta-wrap">
+								<span class="meta-category">{{ post.keyword1 }}</span> /
+								<span class="meta-date">{{ post.date_posted|date:"F d, Y" }}</span>
+							</div>
+							<h3>
+								<a href="{% url 'post-detail' post.slug %}">{{ post.title }}</a>
+							</h3>
+						</figcaption>
+					</figure>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</section>
+
+	<footer id="footer" class="padding-large">
+		<div class="container">
+			<div class="row">
+				<div class="footer-menu col-md-4">
+					<div class="footer-intro">
+						<a href="{% url 'home' %}"><h1>ABRAR SHAHRIAR</h1></a>
+					</div>
+					<div class="subscribe">
+						<p>Subscribe to my newsletter to get some updates related with branding, designs and more.</p>
+						<input type="text" name="email" placeholder="Write Your Email Address">
+						<button class="btn btn-primary">Subscribe</button>
+					</div>
+				</div>
+
+				<div class="footer-menu col-6 col-md-2">
+					<ul class="menu-list">
+						<li class="menu-item"><a href="{% url 'home' %}">Home</a></li>
+						<li class="menu-item"><a href="#section1">My Services</a></li>
+						<li class="menu-item"><a href="{% url 'blog' %}">Blog</a></li>
+						<li class="menu-item"><a href="{% url 'contact' %}">Contact</a></li>
+					</ul>
+				</div>
+
+				<div class="footer-menu col-6 col-md-2">
+					<ul class="menu-list">
+						<li class="menu-item"><a href="{% url 'projects' %}">Portfolio</a></li>
+						<li class="menu-item"><a href="{% url 'certificates' %}">My Certificates</a></li>
+						<li class="menu-item"><a href="{% url 'resume' %}">Resume</a></li>
+					</ul>
+				</div>
+
+				<div class="footer-menu col-md-4">
+					<div class="footer-address">
+						<p>Just feel free to contact if you wanna collaborate with me, or simply have a conversation.
+						</p>
+						<div class="mail-address">
+							<a href="mailto:abrarshahriar360@yahoo.com">abrarshahriar360@yahoo.com</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div id="footer-bottom" class="py-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="social-links">
+						<ul class="justify-content-center justify-content-md-start p-0">
+							<li><a href="https://www.facebook.com/profile.php?id=100011063379538" target="_blank"><i class="icon icon-facebook"></i></a></li>
+							<li><a href="https://www.instagram.com/abrarshahriarrr/" target="_blank"><iconify-icon icon="ri:instagram-fill"></a></li>
+							<li><a href="mailto:abrarshahriar360@yahoo.com" target="_blank"><iconify-icon icon="mdi:gmail"></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-6 text-center text-md-end">
+					<div class="copyright">
+						<p>Design by <a href="https://www.facebook.com/profile.php?id=100011063379538" target="_blank">Abrar Shahriar</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="{% static 'blog/js/jquery-1.11.0.min.js' %}"></script>
+	<script src="{% static 'blog/assets/vendor/bootstrap-5.1.3/js/bootstrap.bundle.min.js' %}"></script>
+	<script src="{% static 'blog/assets/vendor/chocolat/js/chocolat.js' %}"></script>
+	<script src="{% static 'blog/js/plugins.js' %}"></script>
+	<script src="{% static 'blog/js/script.js' %}"></script>
+
+</body>
+
+
+</html>
